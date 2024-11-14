@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Swiper container styles */
+.mySwiper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative; /* Ensure swiper-pagination is positioned relative to this container */
+  padding-bottom: 60px; /* Add more space if necessary for pagination visibility */
+}
+
+/* Gallery image styling */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination styling (blue dots) */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Position it 10px from the bottom of the container */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  z-index: 10;
+}
+
+/* Style for the pagination bullets (dots) */
+.swiper-pagination-bullet {
+  background-color: #1e3a8a; /* Custom blue color for the dots */
+  opacity: 1;
+  transition: background-color 0.3s ease;
+  
+  
+}
+
+/* Style for the active pagination bullet */
+.swiper-pagination-bullet-active {
+  background-color: #3b82f6; /* Lighter blue for the active dot */
+}
+
+/* Optional: Hover effect for pagination bullets */
+.swiper-pagination-bullet:hover {
+  background-color: #2563eb; /* Hover effect to make the dots slightly darker */
+}
